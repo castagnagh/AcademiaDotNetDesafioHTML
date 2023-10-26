@@ -170,16 +170,16 @@ section article img:hover
     border-collapse: collapse;
 }
 
-.contato table tr td{
+.contato table tr {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
     margin-top: 35px;
 }
-
 
 .contato img {
     margin-right: 10px;
 }
+
 
 .form {
     display: flex;
