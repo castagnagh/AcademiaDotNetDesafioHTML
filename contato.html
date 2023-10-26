@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Casa & Cia Construções - Transformando sonhos em realidade desde 2023. Oferecemos serviços de qualidade, segurança e profissionalismo para suas necessidades de construção.">
+    <meta name="keywords" content="construção, qualidade, segurança, profissionalismo, obras, Casa & Cia Construções">
     <link rel="stylesheet" href="css/style.css">
     <title>Contato</title>
 </head>
+
 <body>
     <header>
         <nav>
@@ -17,36 +22,65 @@
         <section class="outdoor">
             <div class="texto-outdoor">
                 <h1>Casa & Cia Construções</h1>
-                <p class="subtitle">Transformando sonhos em realidade desde 2023</p>
-                <a href="#"><button type="button">Solicite um orçamento</button></a>
+                <h3 class="subtitle">Transformando sonhos em realidade desde 2023</h3>
+                <a href="#"><button type="button" id="button-orcamento">Solicite um orçamento</button></a>
             </div>
         </section>
     </header>
-    <section class="contato">
-        <div class="contato-item">
-            <div><img src="images/whatsapp.png" alt="Icon whatsapp" width="16"> (55) 9 8122-1100</div>
-            <div><img src="images/telefone.png" alt="Icon telefone" width="16"> 4002-8922</div>
+    <section class="titulo">
+        <div class="texto-com-linhas">
+            <div class="linha-esquerda"></div>
+            <span>
+                <h2>Contato</h2>
+            </span>
+            <div class="linha-direita"></div>
         </div>
-        <div class="contato-item">
-            <div><img src="images/gmail.png" alt="Icon gmail" width="16"> ciaconstrucoes@gmail.com</div>
-            <div><img src="images/logotipo-do-linkedin.png" alt="Icon link" width="16"> Linkedin
-            </div>
-        </div>
+        <p>Entre em contato através das nossas redes</p>
     </section>
-    <section class="form">
-        <form action="#" method="post">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-        
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-        
-            <label for="assunto">Assunto:</label>
-            <input type="text" id="assunto" name="assunto" required>
-        
-            <button type="submit">Enviar</button>
-        </form>
+    <section class="contato">
+        <table style="width: 65%;">
+            <tr>
+                <td>
+                    <img src="images/whatsapp.png" alt="Icon whatsapp" width="32">
+                    <span>(55) 9 8122-1100</span>
+                </td>
+                <td>
+                    <img src="images/telefone.png" alt="Icon telefone" width="32">
+                    <span>4002-8922</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="images/gmail.png" alt="Icon gmail" width="32">
+                    <span>ciaconstrucoes@gmail.com</span>
+                </td>
+                <td>
+                    <img src="images/logotipo-do-linkedin.png" alt="Icon link" width="32">
+                    <span>Linkedin</span>
+                </td>
+            </tr>
+        </table>
     </section>
     
+    <section class="form">
+        <div>
+            <h3>Alguma dúvida?</h3>
+            <p>Envie-nos uma mensagem</p>
+        </div>
+        <form action="formulario.html" method="post">
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" required><br>
+
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="assunto">Assunto:</label><br>
+            <textarea type="text" id="assunto" name="assunto" required rows="4"></textarea>
+
+            <a href="formulario.html"><button type="button">Enviar</button></a>
+        </form>
+    </section>
+
 </body>
+
 </html>

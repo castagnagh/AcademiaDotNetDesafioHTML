@@ -1,31 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rozha+One&family=Scheherazade+New&display=swap');
 
-*
-{
+* {
     margin: 0;
     padding: 0;
 }
-
-nav
-{
+/*CSS PARA OUTDOOR E MENU*/
+nav {
     display: flex;
     justify-content: center;
-    background-color: #DCDFC6;
-}
-li
-{
-    display: inline;
-    text-decoration: none;
-    margin: 10px;
-}
-a
-{
-    font-family: 'Rozha One', serif;
-    text-decoration: none;
-    color: #B8920B;
+    background-color: #d1e42ccc;
 }
 
+li {
+    display: inline;
+    text-decoration: none;
+    margin: 12px;
+}
+
+a {
+    font-family: 'Rozha One', serif;
+    text-decoration: none;
+    color: #aa8500;
+}
+/* a:hover{
+    padding: 5px;
+    border-radius: 10px;
+    background-color:#aa8500;
+    color: antiquewhite;
+}     */
 .outdoor {
     position: relative;
     width: 100%;
@@ -48,88 +51,95 @@ a
 }
 
 
-.texto-outdoor
-{
+.texto-outdoor {
     font-family: 'Scheherazade New', serif;
     padding-top: 5%;
     padding-left: 15%;
     z-index: 2;
-    
 }
 
-h1
-{
+h1 {
     font-size: 60px;
     color: white;
     margin-top: 20px;
     margin-bottom: 5px;
     padding: 0;
-    
+    position: relative;
+    z-index: 3;
+    line-height: 100%;
 }
-.subtitle
-{
+
+.subtitle {
     margin-top: 0;
     color: white;
+    position: relative;
+    z-index: 3;
 }
-.texto-outdoor button
-{
-    color:white;
+
+#button-orcamento {
+    color: white;
     border-style: none;
     border-radius: 10px;
     padding: 10px;
-    font-family: 'Scheherazade New', serif;
-    background-color: rgb(241, 79, 79);
-    z-index: 2;
+    
+    cursor: pointer;
+    background-color: red;
+    position: relative;
+    z-index: 3;
 }
-
+#button-orcamento:hover
+{
+    background-color: rgb(241, 79, 79);
+}
+/*CSS PARA TITULO DA PÁGINA NA AREA DO CONTEUDO*/
 .texto-com-linhas {
     display: flex;
     align-items: center;
 }
 
-.linha-esquerda, .linha-direita {
+.linha-esquerda,
+.linha-direita {
     flex-grow: 1;
     height: 1px;
     background: linear-gradient(to right, transparent, #000, transparent);
     content: "";
 }
 
-.container
-{
+.container {
     margin: 0 20%;
 }
 
-.titulo
-{
+.titulo {
     font-family: 'Scheherazade New', serif;
     margin-top: 20px;
     text-align: center;
     font-style: normal;
 }
 
-.block-card
-{
+.block-card {
     margin: 10px;
 }
 
-.card img
-{
+.card img {
     box-shadow: 2px rgba(0, 0, 0, 1);
     border-radius: 10px;
 }
 
-.card h3
-{
+.card h3 {
     font-family: 'Rozha One', serif;
     color: #B8920B;
 }
 
-.card div
-{
+.card div {
     margin: 0 5%;
 }
-.card
-{
+
+.card div p {
+    font-family: 'Scheherazade New', serif;
+    line-height: 120%;
+}
+
+.card {
     margin: 30px 0;
     text-align: justify;
     justify-content: center;
@@ -137,17 +147,96 @@ h1
     display: flex;
 }
 
-.card h3
-{
+.card h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.contato-item
+section article img {
+    margin: 10px;
+    border-radius: 10px;
+}
+
+section article img:hover
 {
-    margin-top: 20px;
+    box-shadow: 4px 6px 0px 2px rgba(0, 0, 0, 0.5);
+}
+
+.contato {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.contato table tr td{
+    display: flex;
     align-items: center;
-    justify-items: center;
+    margin-top: 35px;
+}
+
+
+.contato img {
+    margin-right: 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    background-color: #DCDFC6;
+    text-align: center;
+}
+
+.form div {
+    font-family: 'Scheherazade New', serif;
+    margin-bottom: 20px;
+}
+
+.form div h3 {
+    margin-top: 20px;
+}
+
+.form form {
+    width: 65%;
+    text-align: left;
+}
+
+
+label {
+    line-height: 110%;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Scheherazade New', serif;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    font-family: 'Scheherazade New', serif;
+    width: 100%;
+    padding: 5px;
+    border: none;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+button {
+    font-family: 'Scheherazade New', serif;
+    padding: 10px 20px;
+    background-color: #B8920B;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+button:hover{
+    background-color: #B9AC68;
 }
