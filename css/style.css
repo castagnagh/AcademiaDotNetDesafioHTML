@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rozha+One&family=Scheherazade+New&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +11,7 @@
 nav {
     display: flex;
     justify-content: center;
-    background-color: #d1e42ccc;
+    background-color: #F0D440;
 }
 
 li {
@@ -21,7 +23,8 @@ li {
 a {
     font-family: 'Rozha One', serif;
     text-decoration: none;
-    color: #aa8500;
+    text-transform: uppercase;
+    color: #221b02a2;
 }
 /* a:hover{
     padding: 5px;
@@ -52,7 +55,9 @@ a {
 
 
 .texto-outdoor {
-    font-family: 'Scheherazade New', serif;
+
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 4px;
     padding-top: 5%;
     padding-left: 15%;
     z-index: 2;
@@ -81,7 +86,7 @@ h1 {
     border-style: none;
     border-radius: 10px;
     padding: 10px;
-    
+    font-family: 'Bebas Neue', sans-serif;
     cursor: pointer;
     background-color: red;
     position: relative;
@@ -110,10 +115,22 @@ h1 {
 }
 
 .titulo {
+
     font-family: 'Scheherazade New', serif;
     margin-top: 20px;
     text-align: center;
     font-style: normal;
+}
+
+.titulo h2 {
+
+    font-family: 'Rozha One', serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #000000c9;
 }
 
 .block-card {
